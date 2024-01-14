@@ -1,11 +1,176 @@
 {
 	"version": "0.0.1",
 	"changelog": {
-		"Test": [
-			"This is version 0.0.1",
-			["This is a sub change", "This is another sub change"]
+		"Alpha Version": [
+			"This version is in a closed alpha state, and is not yet ready for public use.",
+			"Your feedback is welcome, but please do not share your feedback with anyone else at this time.",
+			"Your feedback will be used to improve the script before it is released to the public."
 		],
-		"Testing": ["Hello"],
-		"Test2": "Hello String"
+		"Features": [
+			"Realism",
+			[
+				"Voice Distorion",
+				[
+					"Voices will become distorted the further away they are from you.",
+					"Being in a vehicle gives you further range."
+				],
+				"Priority Traffic",
+				[
+					"Restricted channels are able to be placed into a priority traffic mode.",
+					"When in priority traffic mode",
+					[
+						"Only one person can talk at a time.",
+						[
+							"A failed attempt to talk will result in a tone playing on their end."
+						],
+						"A tone will play every 10 seconds to remind listeners."
+					],
+					"Priority traffic mode can be toggled on and off using the /prioritytone command.",
+					[
+						"This command is only available to those with the correct permissions.",
+						"You can assign the permission using ace permissions.",
+						["add_ace group.example command.prioritytraffic allow"]
+					]
+				],
+				"Radio Tones",
+				[
+					"This script uses two methods to play tones",
+					[
+						"Streamed Addon Sounds (Native Audio)",
+						[
+							"This requires having the 'ps-radiotones' resource installed."
+						],
+						"Using NUI/HTML5 Audio",
+						[
+							"This is the default method, and does not require any additional resources."
+						]
+					],
+					"Each user can choose which method they prefer to hear",
+					[
+						"This can be changed inside of the radio settings menu.",
+						"If 'ps-radiotones' is not installed, the option will not be available."
+					]
+				]
+			],
+			"Intuitive UI",
+			[
+				"The radio UI is very easy to use and understand.",
+				[
+					"There are two main pages on the radio",
+					[
+						"Home Page",
+						[
+							"View and change the current frequency you are on",
+							[
+								"When connected to a frequency you can see",
+								[
+									"how many people are listening to the frequency",
+									"if you are in priority traffic mode"
+								],
+								"When changing frequency you can see",
+								["if the frequency is valid"]
+							],
+							"You must click the green Save button to save your frequency change."
+						],
+						"Settings Page",
+						[
+							"Change your Name",
+							"Change your Callsign",
+							"Toggle Playerlist Avatars",
+							"Choose your Radio Tone Method (If ps-radiotones is installed)",
+							[
+								"Streamed Addon Sounds (Native Audio)",
+								"NUI/HTML5 Audio"
+							]
+						]
+					],
+					"The buttons on the radio are clickable.",
+					[
+						"Clicking the buttons will perform the action that is written on the button."
+					]
+				],
+				"Player List UI",
+				[
+					"Player Info for everyone in the frequency",
+					[
+						"Their name, callsign, and server ID will be shown.",
+						[
+							"Their name will be shown as blue when speaking on the radio."
+						],
+						"If you have the 'Show Avatars' option enabled, their player avatar will be shown."
+					]
+				],
+				"The default keybind is 'U'.",
+				["This can be changed inside of the FiveM keybinds menu."],
+				"Radio UI is fully responsive.",
+				[
+					"The UI will automatically resize to fit your screen.",
+					"This means that it will work on almost any resolution."
+				]
+			],
+			"Channel Restrictions",
+			[
+				"Channels can only hold a maximum of 45 people per channel.",
+				[
+					"This is to prevent the radio from being spammed with too many people.",
+					"This prevents the playerlist from taking up too much space on the screen."
+				],
+				"Methods of Restricting Channels",
+				[
+					"Password",
+					[
+						"Anyone can connect to the channel, but they must know the password."
+					],
+					"Ace Permissions",
+					[
+						"Only people with the correct ace permission can connect to the channel."
+					],
+					"Job",
+					[
+						"This REQUIRES the 'ps-middleware' resource to be installed.",
+						[
+							"You must also be using one of the following frameworks:",
+							["ESX", "QBCore", "vRP"]
+						],
+						"Only people with the correct job can connect to the channel."
+					],
+					"Custom",
+					[
+						"The custom method allows you to code your own method of restricting channels."
+					]
+				],
+				"You can use multiple methods of restricting channels at the same time.",
+				[
+					"Example: You can use a password and an ace permission at the same time."
+				]
+			],
+			"Radio Animations",
+			[
+				"Animations will play when you are talking on the radio.",
+				"You can add your own animations to the config",
+				"Animation Menu",
+				[
+					"This menu can be opened using the /radioanimation command.",
+					[
+						"This command is only available to those with the correct permissions.",
+						"You can assign the permission using ace permissions.",
+						["add_ace group.example command.radioanimation allow"]
+					],
+					"This menu will allow a player to choose which animation they want to play."
+				]
+			],
+			"Radio Permissions",
+			[
+				"The radio doesn't exactly have a permission system built in.",
+				"Instead, you can make the radio require an item to open it (framework required)",
+				[
+					"By default support for ESX, QBCore, and ox_inventory is included.",
+					[
+						"You can add support for other frameworks by editing the config file.",
+						["See the config file for more information."]
+					]
+				]
+			]
+		]
 	}
 }
