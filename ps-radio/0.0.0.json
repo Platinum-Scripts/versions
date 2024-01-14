@@ -1,0 +1,28 @@
+{
+	"version": "0.0.0",
+	"changelog": {
+		"Test": [
+			"This is a test...",
+            [
+                "Another test...",
+                "Another test 2...",
+                [
+                    "Another test 3...",
+                    [
+                        "Another test 4...",
+                        "Another test 5..."
+					],
+                    "Another test 6...",
+                    [
+                        "Another test 7...",
+                        "Another test 8..."
+					]
+				]
+			],
+            "This is another test...",
+            "This is a third test..."
+		],
+		"Testing": ["Hello"],
+		"Test2": "Hello String"
+	}
+}
