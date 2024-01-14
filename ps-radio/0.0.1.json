@@ -1,0 +1,11 @@
+{
+	"version": "0.0.1",
+	"changelog": {
+		"Test": [
+			"This is version 0.0.1",
+			["This is a sub change", "This is another sub change"]
+		],
+		"Testing": ["Hello"],
+		"Test2": "Hello String"
+	}
+}
